@@ -27,7 +27,9 @@ class Calculator extends React.Component{
 
     clearDisplay() {
         this.setState({
-            displayValue: '0'
+            displayValue: '0',
+            value: null
+            
         })
     }
     performOperation(nextOperator) {
@@ -41,7 +43,7 @@ class Calculator extends React.Component{
             "-": (preValue, nextValue) => preValue - nextValue,
             "=": (preValue, nextValue) => nextValue
         }
-
+ 
         if (value === null) {
             //  no previus value, hit a operator key.
             this.setState({
@@ -60,9 +62,6 @@ class Calculator extends React.Component{
             operator: nextOperator
         })
     }
-
-
-
 
     render() {
         const {displayValue} = this.state;

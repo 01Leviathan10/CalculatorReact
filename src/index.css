@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
   font: 100 14px 'Roboto';
+  
 }
 
 button {
@@ -51,6 +52,7 @@ button:active{
   width: 320px;
   height: 520px;
   position: relative;
+  
 }
 
 .calculator {
